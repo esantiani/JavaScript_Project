@@ -1,0 +1,60 @@
+body {
+  font-family: 'Courier New', Courier, monospace, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: black;
+  background-color: orange;
+  background-image: url('your-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+                                 
+.accordion {                    /* main reference: https://www.youtube.com/watch?v=dPLHi7tsoFU&t=1s;  start; sets size */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.accordion .contentBx {        /* wrapper size of label and content  */
+  margin: 10px auto;
+}
+
+.accordion .contentBx .label {   /* header makes it collapse  */
+  position: relative;
+  padding: 10px;
+  background: brown;
+  color: white;
+  cursor: pointer;
+}
+
+.accordion .contentBx .label::before {  /* + label  */
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+}
+
+.accordion .contentBx .content {     /* open state content  can the open state sizing and content be one?  */
+  position: relative;
+  background: white;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+
+}
+
+.accordion .contentBx.active .content {   /* open state sizing  */
+    height: 150px;
+    padding: 10px;
+}
+
+.accordion .contentBx.active .label::before {  /* - label  */
+  content: '+';
+  content: '−';
+}
+
