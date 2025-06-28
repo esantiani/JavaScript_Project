@@ -25,7 +25,7 @@ Included Bootstrap Components
 	Carousel to rotate images - not Bootstrap 
 	Accordions for FAQs
 
-Included the following JavaScripts in scripts.JavaScript
+Included the following JavaScript Functions in folder JavaScript Function/scripts.js
 	Feedback storage
 	Total Price Calculartor for dog Adoption 
 	Email verification
